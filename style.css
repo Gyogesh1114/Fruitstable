@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*body{
+	padding: 20px;
+}*/
+.topmenu{
+	background-color: #81c408;
+	display: flex;
+	height: 60px;
+	width: 80%;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 35px;
+}
+.header{
+	height: 80px;
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.header .r1{
+	font-size: 42px;
+	font-weight: bold;
+	color: #81c408;
+}
+.header .r2{
+	width: 50%;
+}
+.header .r2 ul{
+	display: flex;
+	list-style-type: none;
+	justify-content: space-between;
+}
+.header .r2 ul li a{
+	text-decoration: none;
+	color: grey;
+	font-size: 18px;
+}
+.header .r2 ul li a:hover{
+	color: #81c408;
+}
+
+.header .r3{
+	font-size: 30px;
+	color: #81c408;
+}
+.header .r4{
+	font-size: 30px;
+	color: #81c408;
+	display: none;	
+}
+.organicfoods{
+	height: 500px;
+	width: 100%;
+	background-color: beige;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.organicfoods .r1{
+	height: 425px;
+	width: 45%;
+	/*border: 1px solid;*/
+	border-radius: 25px;
+	display: flex;	
+	flex-direction: column;
+	justify-content: space-between;
+}
+.organicfoods .r1 h5{
+	font-size: 30px;
+	color: goldenrod;
+	font-family: "Raleway", sans-serif;
+}
+.organicfoods .r1 h1{
+	font-size: 68px;
+	font-weight: bold;
+	color: #81c408;
+	font-family: "Raleway", sans-serif;
+}
+.organicfoods .r2{
+	height: 425px;
+	width: 40%;
+	/*border: 1px solid;*/
+	border-radius: 25px;
+	background-image: url("Food1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.r1c1{
+	position: relative;
+	display: flex;
+
+}
+.r1c1 .search{
+	height: 60px;
+	width: 80%;
+	border-radius: 25px;
+	border: 2px solid goldenrod;
+	font-size: 18px;
+}
+.r1c1 .submit{
+	height: 60px;
+	width: 30%;
+	border-radius: 25px;
+	/*position: absolute;
+	left: 455px;*/
+	border: 2px solid goldenrod;
+	background-color: #81c408;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+.organicfoods .r2 .r2c1{
+	height: 40px;
+	width: 110px;
+	background-color: rgba(255, 181, 36, 0.7);
+	font-size: 34px;
+	font-weight: bold;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.row3{
+	display: flex;
+	justify-content: space-around;
+}
+
+.row3 .Box{
+	height: 250px;
+	width: 250px;
+	border: 1px solid;
+
+}
+#b1 i{
+	font-size: 120px;
+	color: goldenrod;
+}
+#b2 i{
+	font-size: 120px;
+	color: goldenrod;
+}
+#b3 i{
+	font-size: 120px;
+	color: goldenrod;
+}
+#b4 i{
+	font-size: 120px;
+	color: goldenrod;
+}
+
+
+		/*MEDIA*/
+@media(max-width: 900px)
+{
+	.topmenu
+	{
+		display: none;
+	}
+	.header .r2,.r3{
+		display: none;
+	}
+	.header .r4{
+		display: inline-block;
+	}
+	.organicfoods{
+		flex-direction: column;
+		height: 1000px;
+		width: 100%;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.organicfoods .r1{
+		width: 85%;
+	}
+	.organicfoods .r2{
+		width: 80%;
+		background-size: cover;
+	}
+	.organicfoods .r2 .r2c1{
+		align-items: center;
+	}
+}
+@media(max-width: 500px)
+{	
+	.header{
+		justify-content: space-between;
+	}
+	.topmenu
+	{
+		display: none;
+	}
+	.header .r2,.r3{
+		display: none;
+	}
+	.header .r4{
+		display: inline-block;
+	}
+	.organicfoods{
+		flex-direction: column;
+		height: 1000px;
+		width: 100%;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.organicfoods .r1{
+		width: 80%;
+	}
+	.organicfoods .r2{
+		width: 75%;
+		background-size: cover;
+	}
+	.organicfoods .r1 .r1c1 {
+		position: relative;
+	}
+}
